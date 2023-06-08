@@ -16,6 +16,8 @@ Details of the deep learning model used:
 - 2 convolution layers with maxpooling and dropout
 - 3 Fully Connected layers, each with its own dropout layer
 
+You can watch a demonstration of the application [here](https://youtu.be/8vMar64Fdt4).
+
 ## Result
 Achieved 96.5% accurracy in training and 93.6% accuracy in testing.
 
