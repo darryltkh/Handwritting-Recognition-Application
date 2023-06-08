@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Welcome to StarSearch!</title>
+	<link href="http://localhost:5000/">
+</head>
+
+<body>
+	<h1 class="text-center">Image Classifier</h1>
+
+	<!-- <form class="p-3 text-center" action="/", method="post", enctype="multipart/form-data">
+			<input class="form-control" type="file" name="image">
+			<input class="btn btn-primary mt-3" type="submit" value="Predict image">
+		</form> -->
+
+	<form action="http://localhost:5000/" method="POST" enctype="multipart/form-data">
+		<input type="file" name="image" />
+		<input type="submit" />
+	</form>
+
+	{% if prediction != null %}
+	<p class="text-center"> The word is {{prediction}}</p>
+	{% endif %}
+</body>
+
+</html>
